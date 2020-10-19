@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="東京、高円寺、古着屋、古着、vintage、ヴィンテージ、アメリカ、アメリカンカジュアル、アメカジ">
+    <link rel="stylesheet" href="/nowornever.css">
+    <link rel="stylesheet" href="/css/slick.css">
+    <link rel="stylesheet" href="/css/slick-theme.css">
+    <title>高円寺アメリカンヴィンテージショップNOW OR NEVER</title>
+</head>
+
+<!--header-->
+<nav class="header-nav">
+    <ul>
+            <li class="header-li"><a href="#about">ABOUT</a></li>
+            <li class="header-li"><a href="#gallery">GALLERY</a></li>
+            <li class="header-li"><a href="#onlinestore">ONLINE STORE</a></li>
+            <li class="header-li"><a href="#blog">BLOG</a></li>
+            <li><a href="#info">COMPANY<br>INFORMATION</a></li>
+    </ul>
+</nav>
+<header>
+    <div class="fade-img">
+        <img src="/img/nowornever-header3.jpg" alt="NOW OR NEVER pic">
+        <img src="/img/nowornever-gallery1.jpg" alt="silver ring">
+        <img src="/img/nowornever-gallery2.jpg" alt="schott one star">
+    </div>
+      <h1><a href="http://127.0.0.1:5500/index5.html">USED CLOTHING<br>NOW OR NEVER</a></h1>
+</header>
+<!--header-->
+
+<body>
+
+    <!--about-->
+    <section id="about">
+        <h2>ABOUT<br>"NOW OR NEVER"</h2>
+        <p>古着屋「NOW OR NEVER」は高円寺にあるアメリカンヴィンテージショップです。<br>
+            アメリカンヴィンテージ好きに支持され続け20年。<br>
+            今も尚、良質なヴィンテージを提供し続けている数少ない本格派の古着屋です。<br>
+            オーナー自らアメリカに行き、一つ一つ買い付けております。<br>
+            1910年代～1990年代までのアイビーからワーク物まで、幅広いジャンルで取り扱っております。<br>
+            アメリカンヴィンテージがお好きな方、是非お越しください。</p>
+    </section>
+    <!--about-->
+
+    <!--gallery-->
+    <section id="gallery">
+        <h2>GALLERY</h2>
+        <ul class="slider">
+            <li><img src="/img/nowornever-gallery2.jpg" alt="schott one star"></li>
+            <li><img src="/img/nowornever-gallery3.jpg" alt="inside display"></li>
+            <li><img src="/img/nowornever-gallery4.jpg" alt="silver accessory"></li>
+            <li><img src="/img/nowornever-gallery5.jpg" alt="lee denim"></li>
+            <li><img src="/img/nowornever-gallery6.jpg" alt="sneakers"></li>
+            <li><img src="/img/nowornever-header4.jpg" alt="inside display"></li>
+        </ul>
+        <p>1910's～1990's AMERICAN VINTAGE ITEMS</p>
+    </section>
+    <!--gallery-->
+
+    <!--online store-->
+    <section id="onlinestore">
+        <h2>ONLINE STORE</h2>
+        <div class="flex">
+             <img src="/img/nowornever-onlineshop.jpg" alt="">
+             <p>ワークアイテム・ミリタリー・シルバーアクセect...<br>
+                毎日オンラインストアに新着商品をアップしております。</p>
+        </div>
+            <p class="p-button"><a href="https://nowornever.ocnk.net/" class="p-button">ONLINE STOREはこちら</a></p>
+    </section>
+    <!--online store-->
+
+    <!--blog-->
+    <section id="blog">
+        <h2>BLOG</h2>
+        <div class="flex">
+             <p>新着商品の紹介・古着の雑学・ニュースなどなど<br>
+                毎日発信しております。</p>
+             <img src="/img/nowornever-blog.jpg" alt="">
+        </div>
+            <p class="p-button"><a href="http://usedclothingnowornever.blogspot.com/" class="p-button">BLOGはこちら</a></p>
+    </section>
+    <!--blog-->
+
+    <!--info-->
+    <section id="info">
+        <h2>COMPANY<br>INFORMATION</h2>
+        <dl>
+            <dt>会社名</dt>
+            <dd>有限会社N・O・N SUPPULY USED CLOTHING NOW OR NEVER</dd>
+            <hr>
+        </dl>
+        <dl>
+            <dt>代表取締役</dt>
+            <dd>出口勝一</dd>
+            <hr>
+        </dl>
+        <dl>
+            <dt>連絡先</dt>
+            <dd>03-3317-7707</dd>
+            <hr>
+        </dl>
+        <dl>
+            <dt>事業内容</dt>
+            <dd>VINTAGE ITEMSの販売</dd>
+            <hr>
+        </dl>
+        <dl>
+            <dt>店舗情報</dt>
+            <dd><a href="https://goo.gl/maps/S8a4Coy3kY42">〒166-0003 東京都杉並区高円寺南4-24-2春口ビル2F</a></dd>
+            <hr>
+        </dl>
+    </section>
+    <!--info-->
+
+    <!--footer-->
+    <footer>
+        <h2><a href="http://127.0.0.1:5500/index5.html">NOW OR NEVER</a></h2>
+        <small>written by Santaro Miyakawa</small>
+    </footer>
+    <!--footer-->
+
+    <script src="/js/jquery-3.5.1.min.js"></script>
+    <script src="/js/slick.min.js"></script>
+
+    <!--jquery:header-fade-->
+    <script>
+        $(function(){
+          $(".fade-img img:not(:first-child)").hide();
+          setInterval(function() {
+          $(".fade-img img:first-child").fadeOut("slow").next("img").fadeIn("slow").end().appendTo(".fade-img");
+          },5000);
+          });
+    </script>
+    <!--jquery:header-fade-->
+
+    <!--jquery:gallery-slider-->
+    <script>
+        $(function(){
+            $('.slider').slick({
+                infinite:true,
+                dots:true,
+                slidesToShow:3,
+                autoplay:true,
+                autoplaySpeed:3000,
+                initialSlide:1,
+                arrows:false,
+            });
+        });
+    </script>
+    <!--jquery:gallery-slider-->
+
+    <!--メディアクエリ-slider-img-->
+    <!--メディアクエリ-slider-img-->
+
+</body>
+</html>
